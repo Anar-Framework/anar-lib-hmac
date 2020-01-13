@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package af.gov.anar.lib.hmac;
 
 import java.security.MessageDigest;
@@ -14,8 +12,6 @@ import javax.xml.bind.DatatypeConverter;
 
 import org.apache.commons.codec.binary.Base64;
 
-import io.mosip.kernel.core.exception.NoSuchAlgorithmException;
-import io.mosip.kernel.core.util.constant.HMACUtilConstants;
 
 /**
  * This class defines the HMAC Util to be used in Anar Framework. The HMAC Util
