@@ -20,7 +20,7 @@ import org.apache.commons.codec.binary.Base64;
  * is implemented using desired methods of MessageDigest class of java security
  * package
  */
-public final class HMACUtils {
+public final class HMACUtility {
 	/**
 	 * SHA-256 Algorithm
 	 */
@@ -160,7 +160,7 @@ public final class HMACUtils {
 	/*
 	 * No object initialization.
 	 */
-	private HMACUtils() {
+	private HMACUtility() {
 	}
 
 	
