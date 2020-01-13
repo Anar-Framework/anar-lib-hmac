@@ -10,6 +10,8 @@ import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 import javax.xml.bind.DatatypeConverter;
 
+import af.gov.anar.lib.hmac.exception.NoSuchAlgorithmException;
+import af.gov.anar.lib.hmac.util.HMACUtilConstants;
 import org.apache.commons.codec.binary.Base64;
 
 
@@ -105,8 +107,8 @@ public final class HMACUtils {
 		try {
 			messageDigest = messageDigest != null ? messageDigest : MessageDigest.getInstance(HMAC_ALGORITHM_NAME);
 		} catch (java.security.NoSuchAlgorithmException exception) {
-			throw new NoSuchAlgorithmException(HMACUtilConstants.MOSIP_NO_SUCH_ALGORITHM_ERROR_CODE.getErrorCode(),
-					HMACUtilConstants.MOSIP_NO_SUCH_ALGORITHM_ERROR_CODE.getErrorMessage(), exception.getCause());
+			throw new NoSuchAlgorithmException(HMACUtilConstants.ANAR_NO_SUCH_ALGORITHM_ERROR_CODE.getErrorCode(),
+					HMACUtilConstants.ANAR_NO_SUCH_ALGORITHM_ERROR_CODE.getErrorMessage(), exception.getCause());
 		}
 	}
 
